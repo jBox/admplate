@@ -1,8 +1,8 @@
 {
-    "name": "jx-admin",
+    "name": "admplate",
     "version": "1.0.0",
     "private": true,
-    "description": "jx Admin",
+    "description": "Admin template",
     "main": "server.js",
     "scripts": {
         "clean:dist": "del-cli static/dist/**",
