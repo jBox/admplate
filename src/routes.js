@@ -28,8 +28,7 @@ import {
 
 const routes = [{
     id: "root",
-    routes: [
-        {
+    routes: [{
             path: "/:biz(landing|login|register|access)",
             component: ExtraLayout,
             routes: [{
@@ -114,4 +113,4 @@ const routes = [{
     ]
 }];
 
-export default routes;
+export default [];

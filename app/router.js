@@ -1,8 +1,8 @@
 "use strict";
 
-const babel = require("babel-core/register");
+const babel = require("@babel/register");
 babel({
-    only: /src/,
+    only: [/src/],
 });
 
 // teaches node.js to load css files
@@ -26,7 +26,7 @@ const foundation = require("./foundation");
 const apiBaseUrl = "cv.env.jx.inExternalHost";
 
 /* GET pages. */
-router.get("/:any*?", foundation, (req, res, next) => {
+router.get("/:rest*?", (req, res, next) => {
     const { originalUrl } = req;
     const routerContext = {};
     const preloadedState = {

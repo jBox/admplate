@@ -10,5 +10,5 @@ module.exports = (req, res, next) => {
         req.foundation = { status: statusRes.data, models: modelsRes.data };
         return next();
     }).catch(error => next(error));*/
-    return Promise.resolve();
+    return next();
 };
